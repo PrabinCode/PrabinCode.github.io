@@ -1,0 +1,20 @@
+{
+  "name": "Prabin C. Shrestha",
+  "tagline": "Software developer • Open-source enthusiast",
+  "linkedin": "https://www.linkedin.com/in/pcshrestha",
+  "github": "https://github.com/PrabinCode",
+  "bio": "Hi — I'm Prabin. I build useful web applications and enjoy collaborating on open-source projects. I'm interested in full-stack development, data visualization and developer tools.",
+  "email": "you@example.com",
+  "projects": [
+    {
+      "title": "Task Manager",
+      "description": "A full-stack task management app with authentication and real-time updates.",
+      "link": ""
+    },
+    {
+      "title": "Data Viz Dashboard",
+      "description": "Interactive dashboard built with D3.js using public datasets.",
+      "link": ""
+    }
+  ]
+}

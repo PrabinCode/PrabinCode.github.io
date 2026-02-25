@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabin — Personal Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="name" class="name">Prabin</h1>
+      <p id="tagline" class="tagline">Software developer • Open-source enthusiast</p>
+      <p class="links">
+        <a id="linkedin" href="https://www.linkedin.com/in/pcshrestha" target="_blank" rel="noopener">LinkedIn</a>
+        •
+        <a id="github" href="https://github.com/PrabinCode" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p id="bio">Hi — I'm Prabin. I build useful web applications and enjoy collaborating on open-source projects. Replace this paragraph with a short bio, your skills, and what you're currently working on.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div id="projectsGrid" class="grid">
+        <!-- Project cards will be injected here by assets/site.js -->
+      </div>
+      <p class="more">More projects and case studies coming soon — or link directly to your GitHub repos.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to collaborate? Email: <a id="email" href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> <span id="footerName">Prabin</span> — Built with HTML & CSS • Host on GitHub Pages</div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // update footer name once profile loads
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const nameEl = document.getElementById('footerName');
+        const profileName = document.getElementById('name')?.textContent;
+        if (profileName) nameEl.textContent = profileName;
+      }, 300);
+    });
+  </script>
+</body>
+</html>
